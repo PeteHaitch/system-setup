@@ -15,7 +15,10 @@ if (interactive()) {
 }
 
 # Global options
-options(devtools.name = "Pete",
-        devtools.desc.author = "Peter Hickey <peter.hickey@gmail.com> [aut, cre]",
-        devtools.desc.license = "MIT")
+options(
+  devtools.name = "Pete",
+  devtools.desc.author = "Peter Hickey <peter.hickey@gmail.com> [aut, cre]",
+  devtools.desc.license = "MIT",
+  blogdown.generator.server = TRUE,
+  blogdown.hugo.server = c('-D', '-F', '--navigateToChanged'))
 
